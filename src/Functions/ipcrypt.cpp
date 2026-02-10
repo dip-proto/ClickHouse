@@ -302,7 +302,7 @@ private:
             size_t raw_len = offsets[i] - prev_offset;
             size_t str_len = (raw_len > 0 && chars[offsets[i] - 1] == 0) ? raw_len - 1 : raw_len;
 
-            uint8_t buf[16];
+            uint8_t buf[16]{};
             [[maybe_unused]] bool was_ipv4 = parseStringToIP16(src, str_len, buf);
             applyTransform(ctx, buf);
 
