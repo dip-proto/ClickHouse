@@ -250,6 +250,8 @@ add_contrib (bech32)
 
 add_contrib (libcotp-cmake libcotp)
 
+add_contrib (clickstack-cmake clickstack)
+
 add_contrib (ipcrypt2-cmake ipcrypt2)
 
 # Put all targets defined here and in subdirectories under "contrib/<immediate-subdir>" folders in GUI-based IDEs.
